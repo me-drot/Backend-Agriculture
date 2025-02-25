@@ -133,6 +133,7 @@ def predict():
     
     return jsonify({
         "predicted_rainfall": prediction,
+        "weather_data": latest_data.to_dict()
     })
 
 # Run the Flask app
